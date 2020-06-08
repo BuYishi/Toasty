@@ -1,3 +1,2 @@
-<manifest package="es.dmoral.toasty">
-
-</manifest>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="es.dmoral.toasty" />
