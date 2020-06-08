@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import androidx.annotation.CheckResult;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +35,7 @@ import androidx.annotation.StringRes;
  * along with Toasty.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+@SuppressWarnings("unused")
 @SuppressLint("InflateParams")
 public class Toasty {
     private static final Typeface LOADED_TOAST_TYPEFACE = Typeface.create("sans-serif-condensed", Typeface.NORMAL);
@@ -327,7 +327,7 @@ public class Toasty {
 
         currentToast.setView(toastLayout);
 
-        if (!allowQueue){
+        if (!allowQueue) {
             if (lastToast != null)
                 lastToast.cancel();
             lastToast = currentToast;
