@@ -28,4 +28,5 @@ ext {
     targetSdkVersion = compileSdkVersion
     minSdkVersion = 19
     buildToolsVersion = "29.0.3"
+    appCompat = "1.1.0"
 }
